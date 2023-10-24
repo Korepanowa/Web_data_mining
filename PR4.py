@@ -17,7 +17,7 @@ links = soup.find_all('a')
 i = 0
 
 # Проверка ссылок в формате pdf.
-# Загружаем файл при их наличии.
+# Загружаем файлы при их наличии.
 for link in links:
 	if ('.pdf' in link.get('href', [])):
 		i += 1
