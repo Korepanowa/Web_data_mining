@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 def get_friends_ids(user_id):
     # Добавила полученный token в запрос friends_url:
-    friends_url = 'https://api.vk.com/method/friends.get?user_id={}&access_token=vk1.a.H9cBxNUHcsodG-l10jUtPLpmMuZxQvmPr16ZHdL5gw1tCcL7JgOKIPPzry0IGR1-VTru5XdjK25ffyHo-lbkYdYw_RbbsCsoA74tCHNWeYI-XRrIJLQugxS4zShEYmldA9_NAOE55xMcgvYWc6k8GJVro-4hBQM-21zdJkeyrKJOIAcgEdcoFsxdninNGL0E&expires_in=86400&v=5.131'
+    friends_url = 'https://api.vk.com/method/friends.get?user_id={}&access_token=vk1.a.H9cBxNUHcsodG-l10jUtPLpmMuZxQvmPr16.....................................&v=5.131'
     json_response = requests.get(friends_url.format(user_id)).json()
     if json_response.get('error'):
         print(json_response.get('error'))
