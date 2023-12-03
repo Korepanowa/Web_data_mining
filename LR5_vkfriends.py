@@ -30,7 +30,7 @@ for i in graph:
     for j in graph[i]:
         if i != j and i in friend_ids and j in friend_ids:
             g.add_edge(i, j)
-
+# Смотреть скрины.
 print(g)
 plt.figure(figsize=(10, 10))
 pos = networkx.spring_layout(g)
